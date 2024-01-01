@@ -1,42 +1,42 @@
 Random Number Generator App
 
-Esta aplicación en Java implementa un servicio de generación de números aleatorios con opciones de configuración. Utiliza el patrón de inyección de dependencias para proporcionar flexibilidad en la elección del generador de números aleatorios.
-Descripción
+This Java application implements a random number generation service with configurable options. It utilizes the dependency injection pattern to provide flexibility in choosing the random number generator.
+Description
 
-La aplicación consta de las siguientes clases principales:
+The application consists of the following main classes:
 
-    RandApplication: Clase principal que inicia la aplicación Spring Boot.
-    RandController: Controlador que maneja las solicitudes relacionadas con la generación de números aleatorios.
-    Rand: Clase que representa la generación de números aleatorios y almacena el conjunto resultante en un array.
+    RandApplication: Main class that starts the Spring Boot application.
+    RandController: Controller handling requests related to random number generation.
+    Rand: Class representing random number generation and storing the resulting set in an array.
 
-Características
+Features
 
-    Generación de Números Aleatorios: El controlador proporciona un punto de acceso "/random" que genera números aleatorios con opciones de configuración como límite superior, valor de inicio y cantidad de números a generar.
+    Random Number Generation: The controller provides an endpoint "/random" that generates random numbers with configuration options such as an upper limit, start value, and the quantity of numbers to generate.
 
-    Inyección de Dependencias: La aplicación utiliza la inyección de dependencias para proporcionar flexibilidad en la elección del generador de números aleatorios. Se pueden seleccionar generadores seguros y no seguros.
+    Dependency Injection: The application uses dependency injection to provide flexibility in choosing the random number generator. Both secure and non-secure generators can be selected.
 
-Ejecución
+Execution
 
-Para ejecutar la aplicación, sigue estos pasos:
+To run the application, follow these steps:
 
-    Asegúrate de tener Java instalado en tu sistema.
-    Clona este repositorio: git clone https://github.com/FerchoDuque/Java-dependency-injection.git
-    Navega al directorio del proyecto: cd random-number-generator
-    Ejecuta la aplicación: ./mvnw spring-boot:run
+    Ensure you have Java installed on your system.
+    Clone this repository: git clone https://github.com/yourusername/random-number-generator.git
+    Navigate to the project directory: cd random-number-generator
+    Run the application: ./mvnw spring-boot:run
 
-La aplicación estará disponible en http://localhost:8080.
-Configuración
+The application will be available at http://localhost:8080.
+Configuration
 
-Puedes configurar la aplicación ajustando los parámetros en las solicitudes a la ruta "/random" y "/random_security_selection". Estos parámetros incluyen:
+You can configure the application by adjusting parameters in requests to the "/random" and "/random_security_selection" endpoints. These parameters include:
 
-    bound: Límite superior para la generación de números aleatorios (por defecto: 100).
-    origin: Valor de inicio para la generación de números aleatorios (por defecto: 50).
-    size: Cantidad de números aleatorios a generar (por defecto: 50).
-    secure: Indica si se debe utilizar un generador de números aleatorios seguro (por defecto: false).
+    bound: Upper limit for random number generation (default: 100).
+    origin: Start value for random number generation (default: 50).
+    size: Quantity of random numbers to generate (default: 50).
+    secure: Indicates whether to use a secure random number generator (default: false).
 
-Contribuciones
+Contributions
 
-¡Las contribuciones son bienvenidas! Si encuentras un problema o tienes una mejora, por favor crea un "issue" o envía un "pull request".
-Licencia
+Contributions are welcome! If you find a bug or have an enhancement, please create an issue or submit a pull request.
+License
 
-Este proyecto está bajo la Licencia MIT - consulta el archivo LICENSE.md para más detalles.
+This project is licensed under the MIT License - see the LICENSE.md file for details.
